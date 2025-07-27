@@ -1,10 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Adriane's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
+<body class="bg-[var(--background-light)] bg[var(--background-image)] text-[var(--text-dark)]">
+    <header class="bg-white shadow-md p-4 fixed w-full top-0 z-50">
+        <div>
+            <img src="" alt="">
+            <nav class="container mx-auto flex justify-between md:justify-between">
+                <div>
+                    <span>PORTFOLIO</span>
+                </div>
+                <ul class="flex justify-center gap-x-6 ">
+                    <li><a href="#about" class="font-medium text-[var(--primary-green)] relative after:bg-[var(--primary-green)] after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                            About
+                        </a>
+                    <li><a href="#projects" class="font-medium text-[var(--primary-green)] relative after:bg-[var(--primary-green)] after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                            Projects
+                        </a>
+                    <li><a href="#contact" class="font-medium text-[var(--primary-green)] relative after:bg-[var(--primary-green)] after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                            Contact
+                        </a>
+                    <li><a target="_blank" rel="noopener noreferrer" href="assets/AdrianeSanGaspar_Resume_F.pdf" class="font-medium text-[var(--primary-green)] relative after:bg-[var(--primary-green)] after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                        Resume
+                    </a>
+                </ul>
+            </nav>  
+        </div>
+         
+    </header>
 
-<body>
+    <section id="about" class="pt-32 pb-20  bg-phallanx bg-cover">
+        <div class="flex flex-col md:flex-row items-center justify-center mx-6 md:mx-20 lg:mx-40 xl:mx-60 gap-x-16">
+            <div class="relative w-full mt-16 md:mt-24 text-center md:text-left max-w-lg">
+             
+                    <div class="typewriter w-fit flex justify-center">
+                        <h1 class="text-5xl font-semibold text-emerald-600">
+                            HELLO!!
+                        </h1>
+                    </div>
+
+                
+                <h1 class="text-5xl font-semibold text-[var(--text-dark)]">
+                I'm Adriane
+                </h1>
+                <h2 class="text-4xl leading-snug">A Software Developer </h2>
+                <p class="text-lg mt-4 leading-snug">[under construction on this part idk what to put yet]</p>
+                <div>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="relative w-72 h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] overflow-hidden">
+                <img class="w-full h-full object-cover border-[6px] border-[var(--primary-green)] shadow-lg rounded-3xl" src="images/konata.webp" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="text-5xl font-medium text-center mb-8 pt-32"> Projects</h2>
+        <div class="w-full relative">
+            <div class="swiper multiple-slide-carousel swiper-container relative">
+                <div class="swiper-wrapper mb-16">
+                    <div class="swiper-slide">
+                        <div class="bg-indigo-50 rounded-2xl h-full pt-6 pb-10 px-8 flex flex-col justify-center items-center shadow-xl md:flex">
+                            <div class=" bg-stone-200 w-full h-96 relative flex justify-center md:shrink-0">
+                                <img class="md:h-full " src="/images/konata.webp" alt="">
+                            </div>
+                            <div class="pt-4 flex flex-col justify-center md:shrink-0">
+                                <a href="https://github.com/Alkon0st/FruFrog" class="text-4xl font-semibold text-green-800 hover:text-emerald-600 md:hover:underline">FruFrog</a>
+                                <em class="text-2xl pb-2 text-stone-500"> React Native, Express.js, Firebase</em>
+                                <p class="text-xl"> FruFrog is a mobile budgeting app designed to help individuals and groups 
+                                    manage finances together. Whether you're planning a shared household budget, 
+                                    splitting costs with friends, or tracking your own expenses, FruFrog makes it easy to 
+                                    stay on top of you money.
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-indigo-50 rounded-2xl h-full pt-6 pb-10 px-8 flex flex-col justify-center items-center shadow-xl md:flex">
+                            <div class=" bg-stone-200 w-full h-96 relative flex justify-center md:shrink-0">
+                                <img class="md:h-full " src="/images/konata.webp" alt="">
+                            </div>
+                            <div class="pt-4 flex flex-col justify-center md:shrink-0">
+                                <a href="https://github.com/Alkon0st/FruFrog" class="text-3xl font-semibold text-green-800 hover:text-emerald-600 md:hover:underline">Chatter</a>
+                                <em class="text-2xl pb-2 text-stone-500"> React, Express.js, PostgresSQL</em>
+                                <p class="text-xl"> Chatter is a simple real-time chat application that creates private rooms for two users to communicate 
+                                    instantly. Built with WebSockets via Socket.IO, Chatter delivers low-latency messaging in a lightweight and focused 
+                                    interface.
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-indigo-50 rounded-2xl h-full pt-6 pb-10 px-8 flex flex-col justify-center items-center shadow-xl md:flex">
+                            <div class=" bg-stone-200 w-full h-96 relative flex justify-center md:shrink-0">
+                                <img class="md:h-full " src="/images/konata.webp" alt="">
+                            </div>
+                            <div class="pt-4 flex flex-col justify-center md:shrink-0">
+                                <a href="https://github.com/Alkon0st/FruFrog" class="text-3xl font-semibold text-green-800 hover:text-emerald-600 md:hover:underline">PickNPark </a>
+                                <em class="text-2xl pb-2 text-stone-500"> React, Express.js, MongoDB</em>
+                                <p class="text-xl"> FruFrog is a mobile budgeting app designed to help individuals and groups 
+                                    manage finances together. Whether you're planning a shared household budget, 
+                                    splitting costs with friends, or tracking your own expenses, FruFrog makes it easy to 
+                                    stay on top of you money.
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-indigo-50 rounded-2xl h-full pt-6 pb-10 px-8 flex flex-col justify-center items-center shadow-xl md:flex">
+                            <div class=" bg-stone-200 w-full h-96 relative flex justify-center md:shrink-0">
+                                <img class="md:h-full " src="/images/konata.webp" alt="">
+                            </div>
+                            <div class="pt-4 flex flex-col justify-center md:shrink-0">
+                                <a href="https://github.com/Alkon0st/FruFrog" class="text-3xl font-semibold text-green-800 hover:text-emerald-600 md:hover:underline">End-to-End IoT Manager </a>
+                                <em class="text-2xl pb-2 text-stone-500"> Python, Google Cloud, MongoDB</em>
+                                <p class="text-xl"> FruFrog is a mobile budgeting app designed to help individuals and groups 
+                                    manage finances together. Whether you're planning a shared household budget, 
+                                    splitting costs with friends, or tracking your own expenses, FruFrog makes it easy to 
+                                    stay on top of you money.
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
+                    <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-2xl bg-indigo-100  hover:bg-indigo-600 !-translate-x-16" data-carousel-prev>
+                    </button>
+                    <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-2xl bg-indigo-100 hover:bg-indigo-600 !translate-x-16" data-carousel-next>
+                    </button>
+                </div>
+            </div>
+        </div>  
+        <script>
+            var swiper = new Swiper(".multiple-slide-carousel", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".multiple-slide-carousel .swiper-button-next",
+                prevEl: ".multiple-slide-carousel .swiper-button-prev",
+            },
+            breakpoints: {
+                1920: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                1028: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                990: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            }
+            });
+        </script>
+    </section>
+
+    <section id="skills">
+        <h2 class="text-4xl font-medium text-center mb-8 pt-32">Skills</h2>
+        <div class="text-4xl font-medium text-center mb-8 h-96"> a
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="text-4xl font-medium text-center mb-8 h-96">Let's Touch Base?</h2>
+        <p></p>        
+        <div class="mt-6 flex flex-row">
+            <p></p>
+            <a href=""></a>
+            <button class=""></button>
+        </div>
+    </section>
+
+    <!-- dancing chicken -->
+    <div class="w-72 h-72 m-auto p-10">
+        <div class="tenor-gif-embed" data-postid="20811198" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a  href="https://tenor.com/view/pilotredsunn-gif-20811198">Pilotredsunn GIF</a>
+            from 
+            <a  href="https://tenor.com/search/pilotredsunn-gifs">Pilotredsunn GIFs</a>
+        </div> 
+    <script  type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+    
 </body>
-
 </html>

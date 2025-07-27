@@ -1,0 +1,47 @@
+:root{
+    --background-light: #E8FFD7;
+    --primary-green: #5E936C;
+    --secondary-green: #93DA97;
+    --text-dark: #000;
+    --line-space: .1m;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content;
+  padding-bottom: 64px;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;  
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .20em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .75m; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(15, end),
+    blink-caret .50s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: lightcoral}
+}
+
