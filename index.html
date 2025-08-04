@@ -14,7 +14,7 @@
 <body class="bg-[var(--background-light)] bg[var(--background-image)] text-[var(--text-dark)] cursor-default">
     <header class="bg-white shadow-md p-4 fixed w-full top-0 z-50">
         <nav class="container mx-auto flex justify-between md:justify-between">
-            <div>
+            <div class="titlename">
                 <p class="text-m  group relative w-max">
                     <span class="px-1 relative z-10 group-hover:text-white">Adriane San Gaspar</span>
                     <span class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[var(--primary-green)] z-0 group-hover:h-full "></span>
@@ -53,31 +53,36 @@
 
     <section id="about" class="pt-32 pb-20  bg-gradient-to-b from-cyan-200 to-[var(--background-light)] bg-cover">
         <div class="flex flex-col md:flex-row items-center justify-center mx-6 md:mx-20 lg:mx-40 xl:mx-60 gap-x-16">
+            <div class="relative w-72 h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] overflow-hidden">
+                <img class=" w-full h-full object-cover border-[6px] border-[var(--primary-green)] shadow-lg rounded-3xl" src="images/image0.jpg" alt="">
+            </div>
             <div class="relative w-full mt-16 md:mt-24 text-center md:text-left max-w-lg">
-                    <div class="typewriter w-fit flex justify-center">
-                        <h1 class="text-5xl font-semibold text-emerald-600">
-                            HELLO!!
-                        </h1>
-                    </div>
+                <div class="typewriter w-fit flex ">
+                    <h1 class="text-5xl font-semibold text-emerald-600">
+                        HELLO!!
+                    </h1>
+                </div>
                 <h1 class="text-5xl font-semibold text-[var(--text-dark)]">
                 I'm Adriane
                 </h1>
-                <h2 class="text-4xl leading-snug">A Software Developer </h2>
-                <p class="text-lg mt-4 leading-snug">
+                <h2 class="text-4xl">A Software Developer </h2>
+                <p class="text-lg mt-4 ">
                     I'm a recent Computer Science grad from CSULB. I enjoy working across the stacks, 
                     from designing responsive front-ends to setting up back-end services and 
                     deploying them to the cloud.
                 </p>
                 <div class="flex flex-row mt-4">
-                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Alkon0st">
-                        <img src="/assets/github-svgrepo-com(1).svg" class="w-20 h-auto" alt=""></a>
+                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Alkon0st" class="pr-10">
+                        <img src="/assets/github-svgrepo-com(1).svg" class="w-20 h-auto" alt="">
+                        <span class="text-lg text-center" >Github</span>
+                    </a>
                      <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/adriane-san-gaspar">
-                        <img src="/assets/linkedin.svg" class="w-20 h-auto" alt=""></a>
+                        <img src="/assets/linkedin.svg" class="w-20 h-auto" alt="">
+                        <span class="text-lg">Linkedin</span>
+                    </a>
                 </div>
             </div>
-            <div class="relative w-72 h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] overflow-hidden">
-                <img class=" w-full h-full object-cover border-[6px] border-[var(--primary-green)] shadow-lg rounded-3xl" src="images/image0.jpg" alt="">
-            </div>
+            
             
         </div>
     </section>
