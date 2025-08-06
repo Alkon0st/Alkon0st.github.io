@@ -23,7 +23,7 @@ body{
   background: #4f46e5;  
 }
 
-.typewriter h1 {
+.typewriter h1{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .20em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -32,6 +32,24 @@ body{
   animation: 
     typing 2.5s steps(15, end),
     blink-caret .50s step-end infinite;
+}
+@media only screen and (max-width: 770px) {
+  .typewriter {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .titlename {
+    display: none;
+  };
+
+  nav ul{
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /* The typing effect */
