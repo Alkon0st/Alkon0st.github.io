@@ -175,32 +175,45 @@
             autoplay: {
                 delay:5000,
             },
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 20,
             navigation: {
                 nextEl: ".multiple-slide-carousel .swiper-button-next",
                 prevEl: ".multiple-slide-carousel .swiper-button-prev",
             },
             breakpoints: {
-                1920: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
+                // 1920: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 30
+                // },
+                // 1028: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 30
+                // },
+                // 990: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 0
+                // },
+                // 412: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 0
+                // },
+                // 375: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 0
+                // }
+
+                '@0.75':{
+                    slidesPerView:2,
+                    spaceBetween:20,
                 },
-                1028: {
-                    slidesPerView: 2,
-                    spaceBetween: 30
+                '@1.00':{
+                    slidesPerView:3,
+                    spaceBetween:40,
                 },
-                990: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
-                },
-                412: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
-                },
-                375: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
+                '@1.50':{
+                    slidesPerView:3,
+                    spaceBetween:50,
                 }
             }
             });
@@ -261,19 +274,9 @@
         <h2 class="text-4xl font-medium text-center mt-16">Let's Touch Base?</h2>       
         <div class="mt-32 flex flex-col justify-center text-center ">
             <p class="text-xl">If you need to contact me, here is my email</p>
-            <div class="mt-6 flex flex-row text-cente justify-center">
-                <span id="copyEmail" class="p-4 text-xl bg-indigo-100 rounded-l-xl mr-0 cursor-pointer" href="AdrianeSanGaspar@proton.me">AdrianeSanGaspar@proton.me</span>
-                <button class="p-4 text-xl bg-green-600 hover:bg-green-400 ml-0 rounded-r-xl" onclick="copyText()">Copy</button>
+            <div class="mt-6 flex flex-row text-center justify-center">
+                <a target="_blank" rel="noopener noreferrer" href="mailto:AdrianeSanGaspar@proton.me"><span id="copyEmail" class="p-2 text-xl bg-indigo-100 rounded-xl mr-0 cursor-pointer">AdrianeSanGaspar@proton.me</span></a>
             </div>
-            <p id="hideText" class="pt-4 text-indigo-300 invisible">Text is copied</p>
-            <script>
-                function copyText() {
-                    // Get the text field or element containing the text
-                    var copyText = document.getElementById("copyEmail");
-                    const textToCopy = copyText.textContent;
-                    navigator.clipboard.writeText(textToCopy)
-                }
-            </script>
         </div>
         
         <!-- dancing chicken -->
